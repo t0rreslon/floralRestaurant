@@ -1,0 +1,15 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #D8C5D3;
+    font-size: 32px;
+}
+
+.icon{
+    color: #7FADA4;
+    font-size: 32px;
+    display: inline-block;
+}
+
+.icon::hover{
+    color: white;
+}

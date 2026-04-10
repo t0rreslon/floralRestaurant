@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Inicio</title>
+</head>
+<body class="bg-white">
+    <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+<div class="bg-white">
+    <header class="absolute inset-x-0 top-0 z-50">
+        <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+        <div class="flex lg:flex-1">
+            <a href="#" class="icon">
+                <ion-icon name="rose"></ion-icon>
+            </a>
+        </div>
+        <div class="flex lg:hidden">
+            <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
+            <span class="sr-only">Open main menu</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+            <a href="historia.html" class="text-xl font-semibold text-white/80 hover:text-white transition duration-300">Historia</a>
+            <a href="menu.html" class="text-xl font-semibold text-white/80 hover:text-white transition duration-300">Menú</a>
+            <a href="reservas.html" class="text-xl font-semibold text-white/80 hover:text-white transition duration-300">Reservas</a>
+            <a href="eventos.html" class="text-xl font-semibold text-white/80 hover:text-white transition duration-300">Eventos</a>            
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a href="#" class="text-xl font-semibold text-white"> Pide tu reserva <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        </nav>
+        <el-dialog>
+            <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+                <div tabindex="0" class="fixed inset-0 focus:outline-none">
+                    <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                        <div class="flex items-center justify-between">
+                        <a href="#" class="icon">
+                            <ion-icon name="rose"></ion-icon>
+                        </a>
+                        <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                            <span class="sr-only">Close menu</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                            <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        </div>
+                        <div class="mt-6 flow-root">
+                            <div class="-my-6 divide-y divide-gray-500/10">
+                                <div class="space-y-2 py-6">
+                                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-black/80 hover:text-black transition duration-300">Historia</a>
+                                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-black/80 hover:text-black transition duration-300">Menú</a>
+                                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-black/80 hover:text-black transition duration-300">Reservas</a>
+                                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-black/80 hover:text-black transition duration-300">Eventos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </el-dialog-panel>
+                </div>
+            </dialog>
+        </el-dialog>
+    </header>
+
+    <div class="relative isolate px-6 pt-14 lg:px-8">
+            <div class="absolute inset-0 bg-[url('/img/img1LandingPage.jpg')] bg-cover bg-center h-128 flex items-center justify-center">
+                <!-- Nombre -->
+                <div class="text-center">
+                    <h1 class="relative z-10 text-5xl font-Times New Roman tracking-tight text-balance text-white sm:text-7xl">Floral Restaurant</h1>
+                    <p class="relative z-10 mt-8 text-lg font-medium text-pretty text-white sm:text-xl/8">Donde la elegancia florece en cada sabor.</p>
+                    <div class="relative z-10 mt-10 flex items-center justify-center gap-x-35">
+                        <a href="#" class="relative z-20 text-5l font-semibold text-white/85 hover:text-white transition duration-300">Reserva ya</a>
+                        <a href="#" class="relative z-20 text-5l font-semibold text-white/85 hover:text-white transition duration-300">Mas informacion</a>
+                    </div>
+                </div>
+                <div class="absolute inset-0 bg-black/75"></div>
+            </div>
+        
+        <!-- </section> -->
+        <div aria-hidden="true" class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+            <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75"></div>
+        </div>
+    </div>
+    </div>
+
+    <div class="flex flex-col min-h-screen">
+        <!-- Contenido principal -->
+        <main class="flex-grow">
+            
+        </main>
+
+        <!-- Footer -->
+        
+        
+        <footer class="bg-[#C93034] pt-8 pb-6 ">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap text-left lg:text-left">
+                    <div class="w-full lg:w-6/12 px-4">
+                        <h4 class="text-3xl fonat-semibold text-white">Nos ubicamos en Medellin, Antioquia</h4>
+                        <h5 class="text-lg mt-0 mb-2 text-white">
+                        Encuentranos en Cr 80 calle 77b 2a-57
+                        </h5>
+                        <div class="mt-6 lg:mb-0 mb-6">
+                            <button class="bg-white text-[#C93034] shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                            <button class="bg-white text-[#C93034] shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                                <i class="fab fa-facebook-square"></i>
+                            </button>
+                            <button class="bg-white text-[#C93034] shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                                <i class="fab fa-instagram"></i>
+                            </button>
+                            <button class="bg-white text-[#C93034] shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                                <i class="fab fa-whatsapp"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-6/12 px-4">
+                        <div class="flex flex-wrap items-top mb-6">
+                            <div class="w-full lg:w-5/12 px-4 ml-auto">
+                                <h4 class="text-3xl text-white font-semibold ">Nuestros Horarios Son:</h4>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <p class="text-white/80 hover:text-white font-semibold block pb-2 text-xl">Lunes a viernes: 10am - 10pm</p>
+                                    </li>
+                                    <li>
+                                        <p class="text-white/80 hover:text-white font-semibold block pb-2 text-xl">Domingos y festivos: 12am - 8pm</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-white">
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+            <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                <div class="text-sm text-white font-semibold py-1">
+                    © 2026<a class="text-white"> Floral Restaurant
+                </div>
+            </div>
+            </div>
+        </div>
+        </footer>
+</div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
